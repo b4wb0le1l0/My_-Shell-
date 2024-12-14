@@ -11,5 +11,4 @@ void cmd_loop();
 vector<string> cmd_read();
 int cmd_execute(vector<string>);
 
-
 #endif

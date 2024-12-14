@@ -48,18 +48,18 @@ vector<string> cmd_read()
     return args;
 }
 
-int cmd_execute(vector<string> args) 
+int cmd_execute(vector<string> args)
 {
     command_names maybe_command_name = string_to_enum(args[0]);
     
-    if (maybe_command_name != UNKNOWN) 
+    if (maybe_command_name != UNKNOWN)
     {
         return (commands[maybe_command_name].exec)(args);
-    } 
-    else 
+    }
+    else
     {
         return (commands[EXE].exec)(args);
     }
+    
     return 0;
 }
-

@@ -140,4 +140,3 @@ unordered_map<command_names, command> commands =
     { LS, {"ls", "List directory contents", ls}},
     { EXE, {"exe", "Create new process with your program and consult the time of execution", exe}}
 };
-
